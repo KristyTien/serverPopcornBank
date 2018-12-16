@@ -7,7 +7,10 @@ const UserInfo = mongoose.model(
         address:String, 
         city:String, 
         state:String, 
-        zipcode:String}
+        zipcode:String,
+        saving_account:String,
+        checking_account:String
+    }
 )
 
 module.exports = UserInfo;

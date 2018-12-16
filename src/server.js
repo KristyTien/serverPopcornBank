@@ -116,11 +116,6 @@ const logout = (req, res, next) =>{
     res.json('you logged out lol');
 }
 
-const protected = (req, res) =>{
-    console.log(req.isAuthenticated());
-    res.json('hahah');
-}
-
 server.listen(port);
 
 console.log('popcorn bank server is running...');
@@ -139,8 +134,14 @@ server.post('/withdraw', postWithdraw);
 server.post('/register', postRegister);
 server.post('/user_info', postAddUserInfo);
 
+
 // server.get('/protected',protected);
 
+//const protected = (req, res) =>{
+    //     console.log(req.isAuthenticated());
+    //     res.json('hahah');
+    // }
+    
 
 // const helloKitty = new Cat({name:'Hell Kitty', color:'red', size:'L'});
 // helloKitty.save().then(() =>{console.log('kitty saved')});

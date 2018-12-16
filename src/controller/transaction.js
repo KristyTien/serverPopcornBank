@@ -90,7 +90,7 @@ function postDeposit(req, res){
                     let accountActivity = new AccountActivity({
                         accountId:account[0].id,
                         timeStamp: Date.now(),
-                        amount: -req.body.amount,
+                        amount: req.body.amount,
                         description:'cash deposit',
                         transactionAccount:account[0].id
 
