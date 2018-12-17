@@ -97,7 +97,6 @@ server.use(passport.session());
 
 
 const loginPost = (req, res, next) =>{
-    console.log('hello this is login post');
     passport.authenticate('local', (err, user, info) =>{
         req.login(user, (err)=>{
             if(user){
